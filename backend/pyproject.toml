@@ -6,6 +6,7 @@ dependencies = [
     "fastapi>=0.111",
     "uvicorn[standard]>=0.30",
     "sqlalchemy>=2.0",
+    "greenlet>=3.0",
     "aiosqlite>=0.20",
     "pydantic>=2",
     "pydantic[email]>=2",

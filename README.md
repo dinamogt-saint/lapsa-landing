@@ -18,10 +18,10 @@ Lapsa connects Shopify + Google Ads + GA4, sends a daily brief at 8 AM, and lets
 | Email validation | Real | Pydantic EmailStr + client-side regex |
 | Rate limiting | Real | 5 req/min per IP via slowapi |
 | Testimonials | Mocked | Illustrative — replace with real reviews |
-| Trust stats (50+ stores) | Mocked | Update when you have real numbers |
-| Telegram chat screenshot | Mocked | Built as styled div, not a real screenshot |
-| Pricing (€15 founding rate) | Real copy | Wire up Stripe when ready |
-| Auth ("Sign in") | Placeholder | No auth implemented yet |
+| Trust stats | Removed | Site now uses honest early-access positioning |
+| Telegram chat screenshot | Example | Built as styled div, not a real screenshot |
+| Pricing | Planned copy | Early access first, pricing later |
+| Legal pages | Real | Privacy, terms, security, and contact pages |
 
 ---
 
@@ -41,6 +41,12 @@ npm run dev
 # → http://localhost:3000
 ```
 
+If the frontend should proxy waitlist submissions to a non-local backend, set:
+
+```bash
+API_BASE_URL=https://your-api.example.com npm run dev
+```
+
 ### Backend (separate terminal)
 
 ```bash
@@ -56,6 +62,7 @@ The SQLite database (`backend/lapsa.db`) is created automatically on first start
 
 ```bash
 cd frontend
+npm run lint
 npm run build
 ```
 

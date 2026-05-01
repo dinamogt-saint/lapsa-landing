@@ -17,22 +17,22 @@ export default function Hero() {
         <AnimatedHero />
       </div>
 
-      {/* Trust stats */}
+      {/* Early-access status */}
       <div className="relative z-10 container mx-auto px-4 pb-16">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 text-sm text-zinc-500">
           <div className="flex items-center gap-2">
-            <span className="text-orange-400 font-bold text-base">50+</span>
-            <span>stores connected</span>
+            <span className="text-orange-400 font-bold text-base">Beta</span>
+            <span>early stores onboarding</span>
           </div>
           <div className="hidden sm:block w-px h-4 bg-zinc-800" />
           <div className="flex items-center gap-2">
-            <span className="text-orange-400 font-bold text-base">€2M+</span>
-            <span>ad spend analyzed</span>
+            <span className="text-orange-400 font-bold text-base">Shopify</span>
+            <span>first data source</span>
           </div>
           <div className="hidden sm:block w-px h-4 bg-zinc-800" />
           <div className="flex items-center gap-2">
-            <span className="text-orange-400 font-bold text-base">4.8★</span>
-            <span>avg ROAS improvement</span>
+            <span className="text-orange-400 font-bold text-base">Telegram</span>
+            <span>daily brief MVP</span>
           </div>
         </div>
       </div>

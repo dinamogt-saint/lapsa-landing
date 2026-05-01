@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -8,20 +9,21 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
+    { label: "Example", href: "#example-brief" },
     { label: "Features", href: "#features" },
+    { label: "Use cases", href: "#use-cases" },
     { label: "How it works", href: "#how-it-works" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Integrations", href: "#integrations" },
   ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-800/60 bg-zinc-950/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2 font-bold text-lg">
+        <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <span className="text-2xl">🦊</span>
           <span className="text-white">Lapsa</span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
@@ -38,8 +40,8 @@ export default function Navbar() {
 
         {/* Desktop actions */}
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="ghost" size="sm" className="text-zinc-400 hover:text-white">
-            Sign in
+          <Button variant="ghost" size="sm" className="text-zinc-400 hover:text-white" asChild>
+            <Link href="/security">Security</Link>
           </Button>
           <Button
             size="sm"
@@ -48,7 +50,7 @@ export default function Navbar() {
               document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Start free trial
+            Join early access
           </Button>
         </div>
 
@@ -78,8 +80,8 @@ export default function Navbar() {
             ))}
           </nav>
           <div className="flex flex-col gap-3 pt-4 border-t border-zinc-800">
-            <Button variant="outline" className="w-full border-zinc-700 text-zinc-300">
-              Sign in
+            <Button variant="outline" className="w-full border-zinc-700 text-zinc-300" asChild>
+              <Link href="/security">Security</Link>
             </Button>
             <Button
               className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold"
@@ -88,7 +90,7 @@ export default function Navbar() {
                 document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Start free trial
+              Join early access
             </Button>
           </div>
         </div>

@@ -7,29 +7,29 @@ import {
 
 const faqs = [
   {
-    question: "Is Lapsa really read-only? Can it accidentally change my campaigns?",
+    question: "Is Lapsa read-only?",
     answer:
-      "Yes, 100% read-only. We request only read scopes from Google Ads and Shopify. Lapsa has no write access and cannot make any changes to your account. The system prompt literally refuses to try.",
+      "The product is designed around read-only access. During early access, we will explain every permission before asking you to connect anything and will not request campaign-editing permissions.",
   },
   {
     question: "Which platforms does it support right now?",
     answer:
-      "Shopify (orders, products, sessions), Google Ads (campaigns, keywords, spend), and GA4 (sessions, attribution). Meta Ads and TikTok are on the roadmap for v1.1 — sign up and you'll get notified.",
+      "Early access starts Shopify-first, with GA4 and ads reporting added through the available account access path. Google Ads support depends on API approval and account eligibility.",
   },
   {
     question: "How does attribution work across three platforms?",
     answer:
-      "Google Ads, GA4, and Shopify all report different revenue for the same conversions — usually 20–40% apart. Lapsa shows you all three, explains the gaps (view-through conversions, last-click vs data-driven, cross-device stitching), and gives you the most defensible number to use for budget decisions.",
+      "The goal is to show Shopify, GA4, and ad-platform numbers side by side and explain why they differ. Early versions may use Shopify and GA4 first, with ad-platform data added once the connection path is available.",
   },
   {
     question: "Is my data safe?",
     answer:
-      "We request read-only OAuth tokens, store them encrypted, and never share your data with third parties. Your store data is used exclusively to answer your questions. We're GDPR-compliant and based in Latvia (EU).",
+      "Lapsa will request the minimum useful access and will document how data is stored before early users connect accounts. See the privacy and security pages for the current policy.",
   },
   {
     question: "What happens after the 14-day trial?",
     answer:
-      "Nothing happens automatically — Lapsa pauses and waits for you. No surprise charges. If you want to keep going, pick a plan. If you don't, your data is deleted after 30 days.",
+      "There is no paid trial yet. Joining early access only means we can contact you about onboarding and product updates.",
   },
 ];
 

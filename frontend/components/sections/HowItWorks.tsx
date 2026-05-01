@@ -4,18 +4,18 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "Connect",
-      body: "Link Shopify + Google Ads + GA4. Three OAuth flows, ~3 minutes total. We request read-only scopes — nothing else.",
+      title: "Join",
+      body: "Tell us about your store and what you want to understand each morning. Early access starts with a short onboarding path.",
     },
     {
       number: "2",
-      title: "Sync",
-      body: "Lapsa pulls your last 90 days of data overnight. One time. After that, it stays fresh automatically.",
+      title: "Connect carefully",
+      body: "Lapsa starts with the smallest useful data set, then adds analytics and ads context as the account access path is ready.",
     },
     {
       number: "3",
-      title: "Ask",
-      body: 'Open Telegram. Type a question. Get a real answer with real numbers. Or just wait for tomorrow\'s brief at 8 AM.',
+      title: "Read the brief",
+      body: "Open Telegram each morning for a concise read on what changed, what matters, and what to check next.",
     },
   ];
 
@@ -80,8 +80,11 @@ export default function HowItWorks() {
               {/* Bot response */}
               <div className="flex justify-start">
                 <div className="bg-zinc-800 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[90%]">
-                  <p className="text-zinc-300 text-sm font-semibold mb-2">📊 Daily Brief — Mon 28 Apr</p>
+                  <p className="text-zinc-300 text-sm font-semibold mb-2">Daily Brief - Mon 28 Apr</p>
                   <div className="space-y-1.5 text-xs text-zinc-400">
+                    <div className="mt-2 pb-2 border-b border-zinc-700">
+                      <span className="text-orange-400">Main thing: revenue held steady, but paid traffic became less efficient.</span>
+                    </div>
                     <div className="flex justify-between gap-4">
                       <span>Revenue (Shopify)</span>
                       <span className="text-white font-medium">€4,812</span>
@@ -99,7 +102,7 @@ export default function HowItWorks() {
                       <span className="text-white font-medium">Brand Search</span>
                     </div>
                     <div className="mt-2 pt-2 border-t border-zinc-700">
-                      <span className="text-orange-400">⚠️ PMax CPA up 34% vs 7d avg. Worth checking creative fatigue.</span>
+                      <span className="text-orange-400">Next check: review the campaign that spent more while orders stayed flat.</span>
                     </div>
                   </div>
                   <p className="text-zinc-600 text-xs mt-2 text-right">08:01</p>
@@ -108,7 +111,7 @@ export default function HowItWorks() {
             </div>
           </div>
           <p className="text-center text-zinc-600 text-xs mt-3">
-            Real data, real format. Numbers above are illustrative.
+            Example format. Numbers above are illustrative.
           </p>
         </div>
       </div>

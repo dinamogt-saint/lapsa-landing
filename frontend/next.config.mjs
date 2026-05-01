@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+const apiBaseUrl = process.env.API_BASE_URL || "http://localhost:8000";
+const apiOrigin = new URL(apiBaseUrl).origin;
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -28,7 +31,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net",
               "font-src 'self' https://cdn.jsdelivr.net data:",
               "img-src 'self' data: https://images.unsplash.com",
-              "connect-src 'self' http://localhost:8000",
+              `connect-src 'self' ${apiOrigin}`,
             ].join("; "),
           },
         ],
@@ -39,7 +42,7 @@ const nextConfig = {
     return [
       {
         source: "/api/waitlist",
-        destination: "http://localhost:8000/waitlist",
+        destination: `${apiBaseUrl}/waitlist`,
       },
     ];
   },
