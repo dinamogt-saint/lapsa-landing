@@ -38,10 +38,10 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-xl font-semibold text-white">Store and analytics data</h2>
             <p className="mt-3">
-              Lapsa is being built as a read-only reporting assistant. Before
-              asking an early user to connect a store, analytics account, or ad
-              account, we will explain which data is requested, why it is needed,
-              and how it is stored.
+              Lapsa is a read-only reporting assistant. Before asking an early
+              user to connect a store, analytics account, or ad account, we will
+              explain which data is requested, why it is needed, and how it is
+              stored.
             </p>
           </section>
 

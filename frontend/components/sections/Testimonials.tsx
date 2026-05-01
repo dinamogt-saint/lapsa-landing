@@ -1,19 +1,22 @@
 export default function Testimonials() {
-  const priorities = [
+  const notes = [
     {
-      title: "Brief quality",
+      label: "Founder quote",
+      title: "First beta customer quote",
       body:
-        "Does the morning message explain the one thing worth acting on, or does it feel like another dashboard?",
+        "A short quote about saving morning dashboard time or finally understanding what changed yesterday.",
     },
     {
-      title: "Data trust",
+      label: "Operator quote",
+      title: "Ecommerce operator feedback",
       body:
-        "Can operators see which source each number came from and where Shopify, GA4, and ads data disagree?",
+        "Feedback about Telegram delivery, anomaly alerts, or clearer Shopify and GA4 reporting.",
     },
     {
-      title: "Daily habit",
+      label: "Agency quote",
+      title: "Agency or freelancer feedback",
       body:
-        "Is Telegram the right lightweight channel for small ecommerce teams to check performance every morning?",
+        "A useful slot for someone checking multiple stores or client accounts.",
     },
   ];
 
@@ -22,22 +25,22 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            What early access will validate
+            Early access stories
           </h2>
           <p className="text-zinc-500 text-lg max-w-xl mx-auto">
-            No fake testimonials. These are the product questions we are testing
-            with the first ecommerce operators.
+            We will add real operator quotes here as early access conversations
+            turn into repeat usage.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {priorities.map((item) => (
+          {notes.map((item) => (
             <div
               key={item.title}
               className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 flex flex-col gap-4"
             >
               <div className="text-xs font-semibold text-orange-400 uppercase tracking-wider">
-                Validation focus
+                {item.label}
               </div>
               <h3 className="font-semibold text-white text-lg">{item.title}</h3>
               <p className="text-zinc-500 text-sm leading-relaxed">{item.body}</p>

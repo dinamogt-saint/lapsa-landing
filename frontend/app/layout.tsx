@@ -63,7 +63,7 @@ const jsonLd = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Telegram",
   description:
-    "Telegram-first AI marketing brief for ecommerce store owners. Lapsa is currently onboarding early stores and validating Shopify, GA4, and ads reporting workflows.",
+    "Telegram-first AI marketing brief for ecommerce store owners. Lapsa helps operators understand Shopify, GA4, and ads reporting workflows through concise daily briefs.",
   offers: [
     {
       "@type": "Offer",

@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "Which platforms does it support right now?",
     answer:
-      "The first validation path is Shopify-first. GA4 and ads reporting are part of the planned integration set, but availability depends on account access and API approval.",
+      "Early access starts Shopify-first, with GA4 and ads reporting added through the available account access path. Google Ads support depends on API approval and account eligibility.",
   },
   {
     question: "How does attribution work across three platforms?",

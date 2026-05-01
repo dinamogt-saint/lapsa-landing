@@ -5,12 +5,12 @@ export default function HowItWorks() {
     {
       number: "1",
       title: "Join",
-      body: "Tell us about your store and what you want to understand each morning. Early access starts with a short manual onboarding call.",
+      body: "Tell us about your store and what you want to understand each morning. Early access starts with a short onboarding path.",
     },
     {
       number: "2",
       title: "Connect carefully",
-      body: "We begin with the smallest useful data set, starting Shopify-first. GA4 and ads reporting are added only when the access path is ready for your account.",
+      body: "Lapsa starts with the smallest useful data set, then adds analytics and ads context as the account access path is ready.",
     },
     {
       number: "3",

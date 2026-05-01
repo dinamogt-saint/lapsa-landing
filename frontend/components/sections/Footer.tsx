@@ -82,7 +82,7 @@ export default function Footer() {
             EU-based · Read-only by design · Early access
           </p>
           <p className="text-zinc-700 text-xs">
-            Lapsa is being built to explain data, not edit campaigns.
+            Lapsa explains data. It does not edit campaigns.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ export default function Features() {
       icon: "📊",
       title: "Morning Brief",
       headline: "Start the day with the one thing that matters",
-      body: "Lapsa is being built around a short Telegram brief: what changed yesterday, why it matters, and what to check next.",
+      body: "Lapsa sends a short Telegram brief: what changed yesterday, why it matters, and what to check next.",
     },
     {
       icon: "💬",
@@ -16,7 +16,7 @@ export default function Features() {
       icon: "🎯",
       title: "Honest Attribution",
       headline: "Built for messy ecommerce reporting",
-      body: "Shopify, GA4, and ad platforms rarely agree. Lapsa is being designed to show the differences clearly instead of hiding them behind a single flattering number.",
+      body: "Shopify, GA4, and ad platforms rarely agree. Lapsa shows the differences clearly instead of hiding them behind a single flattering number.",
     },
   ];
 
@@ -59,7 +59,9 @@ export default function Features() {
                 Read-only. Always.
               </h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Lapsa is being designed as a read-only reporting assistant. The early product focuses on explaining data, not editing campaigns or spending budget.
+                Lapsa is a read-only reporting assistant. The early product
+                focuses on explaining data, not editing campaigns or spending
+                budget.
               </p>
             </div>
             <div className="shrink-0">

@@ -13,8 +13,8 @@ export default function Pricing() {
       badgeColor: "bg-zinc-700/50 text-zinc-300 border-zinc-700",
       features: [
         "Short onboarding call",
-        "Telegram brief preview",
-        "Shopify-first validation",
+        "Telegram brief setup",
+        "Shopify-first onboarding",
         "No card required",
         "Manual setup support",
       ],
@@ -28,14 +28,14 @@ export default function Pricing() {
       priceStrike: false,
       salePrice: null,
       period: "/mo",
-      badge: "Planned",
+      badge: "Early plan",
       badgeColor: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-      foundingBadge: "Target launch plan",
+      foundingBadge: "For early access feedback",
       features: [
         "Daily Telegram brief",
         "1 store",
         "Shopify + GA4 reporting",
-        "Ads reporting when approved",
+        "Ads reporting path",
         "Anomaly alerts",
       ],
       cta: "Get notified",
@@ -46,7 +46,7 @@ export default function Pricing() {
       name: "Growth",
       price: "€79",
       period: "/mo",
-      badge: "Later",
+      badge: "Expansion",
       badgeColor: "bg-zinc-700/50 text-zinc-300 border-zinc-700",
       features: [
         "Multiple stores",
@@ -66,10 +66,11 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Early access first. Pricing later.
+            Start with early access.
           </h2>
           <p className="text-zinc-500 text-lg max-w-xl mx-auto">
-            We are validating the product with a small group before charging.
+            Join the first group, see the brief, and help shape the product
+            before standard pricing is turned on.
           </p>
         </div>
 

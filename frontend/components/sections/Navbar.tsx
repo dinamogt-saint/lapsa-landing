@@ -9,11 +9,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
+    { label: "Example", href: "#example-brief" },
     { label: "Features", href: "#features" },
+    { label: "Use cases", href: "#use-cases" },
     { label: "How it works", href: "#how-it-works" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "/contact" },
+    { label: "Integrations", href: "#integrations" },
   ];
 
   return (
