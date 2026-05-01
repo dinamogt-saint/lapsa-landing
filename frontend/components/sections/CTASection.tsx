@@ -53,16 +53,17 @@ export default function CTASection() {
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-          Ready to stop guessing?
+          Join the early access list
         </h2>
         <p className="text-zinc-400 text-lg md:text-xl max-w-xl mx-auto mb-10">
-          Join 50+ ecom operators who start their day with Lapsa instead of five dashboards.
+          We are onboarding a small group of ecommerce operators to validate the
+          daily Telegram brief before expanding the full integration set.
         </p>
 
         {status === "success" ? (
           <div className="flex flex-col items-center gap-3">
             <div className="rounded-xl border border-green-500/30 bg-green-500/10 px-8 py-6 max-w-md mx-auto">
-              <p className="text-green-400 text-xl font-semibold">🎉 You&apos;re in!</p>
+              <p className="text-green-400 text-xl font-semibold">You&apos;re in.</p>
               <p className="text-zinc-400 text-sm mt-2">We&apos;ll be in touch with early access details.</p>
             </div>
           </div>
@@ -94,7 +95,7 @@ export default function CTASection() {
                   Joining...
                 </span>
               ) : (
-                "Start free trial →"
+                "Join early access"
               )}
             </Button>
           </form>
@@ -106,7 +107,7 @@ export default function CTASection() {
 
         {status !== "success" && (
           <p className="text-zinc-600 text-sm mt-4">
-            No card needed · Cancel anytime · Set up in 3 minutes
+            No card needed. We will contact you before any data connection.
           </p>
         )}
       </div>

@@ -6,39 +6,39 @@ import { Check } from "lucide-react";
 export default function Pricing() {
   const plans = [
     {
-      name: "Free Trial",
+      name: "Early Access",
       price: "€0",
-      period: "/14 days",
-      badge: "No card needed",
+      period: "",
+      badge: "Open now",
       badgeColor: "bg-zinc-700/50 text-zinc-300 border-zinc-700",
       features: [
-        "All features included",
-        "1 store",
-        "2 ad accounts",
-        "Morning brief at 8 AM",
-        "Ask anything (100 messages)",
+        "Short onboarding call",
+        "Telegram brief preview",
+        "Shopify-first validation",
+        "No card required",
+        "Manual setup support",
       ],
-      cta: "Start free trial",
+      cta: "Join early access",
       ctaVariant: "outline" as const,
       highlight: false,
     },
     {
       name: "Starter",
       price: "€29",
-      priceStrike: true,
-      salePrice: "€15",
+      priceStrike: false,
+      salePrice: null,
       period: "/mo",
-      badge: "Most popular",
+      badge: "Planned",
       badgeColor: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-      foundingBadge: "🔥 Founding rate — limited",
+      foundingBadge: "Target launch plan",
       features: [
-        "Everything in trial",
-        "Unlimited messages",
+        "Daily Telegram brief",
         "1 store",
-        "Up to 3 ad accounts",
+        "Shopify + GA4 reporting",
+        "Ads reporting when approved",
         "Anomaly alerts",
       ],
-      cta: "Get Starter",
+      cta: "Get notified",
       ctaVariant: "default" as const,
       highlight: true,
     },
@@ -46,17 +46,16 @@ export default function Pricing() {
       name: "Growth",
       price: "€79",
       period: "/mo",
-      badge: null,
-      badgeColor: "",
+      badge: "Later",
+      badgeColor: "bg-zinc-700/50 text-zinc-300 border-zinc-700",
       features: [
-        "Everything in Starter",
-        "Unlimited stores",
-        "Unlimited ad accounts",
-        "Slack delivery",
+        "Multiple stores",
+        "More ad accounts",
+        "Team delivery options",
         "Priority support",
         "Custom brief time",
       ],
-      cta: "Get Growth",
+      cta: "Join waitlist",
       ctaVariant: "outline" as const,
       highlight: false,
     },
@@ -67,10 +66,10 @@ export default function Pricing() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Simple pricing. No surprises.
+            Early access first. Pricing later.
           </h2>
           <p className="text-zinc-500 text-lg max-w-xl mx-auto">
-            Free for 14 days — no card needed. Cancel anytime.
+            We are validating the product with a small group before charging.
           </p>
         </div>
 
@@ -102,7 +101,7 @@ export default function Pricing() {
                   ) : (
                     <>
                       <span className="text-4xl font-bold text-white">{plan.price}</span>
-                      <span className="text-zinc-500 mb-1">{plan.period}</span>
+                      {plan.period && <span className="text-zinc-500 mb-1">{plan.period}</span>}
                     </>
                   )}
                 </div>

@@ -8,11 +8,11 @@ function AnimatedHero() {
   const [titleNumber, setTitleNumber] = useState(0);
   const titles = useMemo(
     () => [
-      "always on",
-      "data-driven",
-      "brutally honest",
+      "daily",
+      "plain-English",
+      "operator-ready",
       "in Telegram",
-      "yours for €29/mo",
+      "built for ecom",
     ],
     []
   );
@@ -38,12 +38,12 @@ function AnimatedHero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
               </span>
-              No credit card needed · 14-day free trial
+              Early access now open
             </Button>
           </div>
           <div className="flex gap-4 flex-col items-center">
             <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular text-white">
-              Your AI media buyer,
+              AI marketing briefs,
               <span className="relative flex w-full justify-center overflow-hidden text-center h-[1.2em] mt-2">
                 &nbsp;
                 {titles.map((title, index) => (
@@ -65,9 +65,9 @@ function AnimatedHero() {
             </h1>
 
             <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-              Connect Shopify + Google Ads in 3 minutes. Get a morning brief.
-              Ask anything — like texting a senior media buyer who actually reads
-              your data.
+              Lapsa turns your ecommerce numbers into a short daily Telegram
+              brief. Shopify-first validation is live; GA4 and ads reporting are
+              next in the rollout.
             </p>
           </div>
           <div className="flex flex-row gap-3">
@@ -79,7 +79,7 @@ function AnimatedHero() {
             <Button size="lg" className="gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold" onClick={() => {
               document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
             }}>
-              Start free trial
+              Join early access
             </Button>
           </div>
         </div>

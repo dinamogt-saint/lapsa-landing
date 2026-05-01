@@ -3,20 +3,20 @@ export default function Features() {
     {
       icon: "📊",
       title: "Morning Brief",
-      headline: "Know your numbers before your coffee gets cold",
-      body: "Every morning at 8 AM, Lapsa sends your daily brief: yesterday's revenue, ROAS, top campaign, and anything that looks off. No login, no dashboard — just the signal.",
+      headline: "Start the day with the one thing that matters",
+      body: "Lapsa is being built around a short Telegram brief: what changed yesterday, why it matters, and what to check next.",
     },
     {
       icon: "💬",
       title: "Ask Anything",
-      headline: "Your data, in plain language",
-      body: '"Which campaign should I pause?" "Why did spend spike on Tuesday?" "Top 5 products this month?" Lapsa gives you specific answers backed by actual numbers — not generic advice.',
+      headline: "Plain English before dashboards",
+      body: '"Why did sales dip?" "Which products carried the day?" "What should I check first?" The goal is specific, data-backed answers instead of generic advice.',
     },
     {
       icon: "🎯",
       title: "Honest Attribution",
-      headline: "Google Ads, GA4, and Shopify all disagree. We explain why.",
-      body: "Lapsa shows you all three numbers side by side and explains the gap — view-through conversions, last-click vs data-driven, cross-device stitching. The most defensible ROAS, not the most flattering.",
+      headline: "Built for messy ecommerce reporting",
+      body: "Shopify, GA4, and ad platforms rarely agree. Lapsa is being designed to show the differences clearly instead of hiding them behind a single flattering number.",
     },
   ];
 
@@ -59,13 +59,13 @@ export default function Features() {
                 Read-only. Always.
               </h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Lapsa never touches your campaigns. It can&apos;t pause, edit, or spend anything. It just reads your data and tells you the truth. Read-only OAuth scopes, verified on every request.
+                Lapsa is being designed as a read-only reporting assistant. The early product focuses on explaining data, not editing campaigns or spending budget.
               </p>
             </div>
             <div className="shrink-0">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-green-500/10 border border-green-500/20 px-3 py-1 text-xs font-medium text-green-400">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-400" />
-                Read-only verified
+                Read-only by design
               </span>
             </div>
           </div>

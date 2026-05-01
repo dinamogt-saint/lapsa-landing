@@ -1,28 +1,19 @@
 export default function Testimonials() {
-  const testimonials = [
+  const priorities = [
     {
-      name: "Andris K.",
-      role: "Founder, Baltic Sneakers",
-      location: "Riga",
-      stars: 5,
-      quote:
-        "Before Lapsa I'd spend 40 minutes every morning in Google Ads trying to figure out what happened yesterday. Now I get one message at 8 and I know everything I need. The attribution breakdown alone is worth the €15.",
+      title: "Brief quality",
+      body:
+        "Does the morning message explain the one thing worth acting on, or does it feel like another dashboard?",
     },
     {
-      name: "Kristīne M.",
-      role: "Marketing Manager, NordBeauty",
-      location: "Tallinn",
-      stars: 5,
-      quote:
-        "We manage 3 client accounts. The /switch command is a lifesaver — I can jump between them in Telegram without opening a single dashboard. Lapsa caught a PMax budget issue I missed for 4 days.",
+      title: "Data trust",
+      body:
+        "Can operators see which source each number came from and where Shopify, GA4, and ads data disagree?",
     },
     {
-      name: "Pavel S.",
-      role: "Head of Growth, ShopLT",
-      location: "Vilnius",
-      stars: 5,
-      quote:
-        "I was skeptical about yet another AI tool. But Lapsa is different — it refuses to make up numbers, always cites the date range and source, and tells me when it doesn't have data. That honesty is rare.",
+      title: "Daily habit",
+      body:
+        "Is Telegram the right lightweight channel for small ecommerce teams to check performance every morning?",
     },
   ];
 
@@ -31,31 +22,25 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            What store owners say
+            What early access will validate
           </h2>
           <p className="text-zinc-500 text-lg max-w-xl mx-auto">
-            From Riga to Vilnius — Baltic ecom operators who switched.
+            No fake testimonials. These are the product questions we are testing
+            with the first ecommerce operators.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {testimonials.map((t) => (
+          {priorities.map((item) => (
             <div
-              key={t.name}
+              key={item.title}
               className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 flex flex-col gap-4"
             >
-              <div className="flex text-orange-400 text-sm gap-0.5">
-                {"★".repeat(t.stars)}
+              <div className="text-xs font-semibold text-orange-400 uppercase tracking-wider">
+                Validation focus
               </div>
-              <blockquote className="text-zinc-300 text-sm leading-relaxed flex-1">
-                &ldquo;{t.quote}&rdquo;
-              </blockquote>
-              <div className="border-t border-zinc-800 pt-4">
-                <div className="font-semibold text-white text-sm">{t.name}</div>
-                <div className="text-zinc-500 text-xs mt-0.5">
-                  {t.role} · {t.location}
-                </div>
-              </div>
+              <h3 className="font-semibold text-white text-lg">{item.title}</h3>
+              <p className="text-zinc-500 text-sm leading-relaxed">{item.body}</p>
             </div>
           ))}
         </div>
