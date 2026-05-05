@@ -107,7 +107,7 @@ export default function CTASection() {
 
         {status !== "success" && (
           <p className="text-zinc-600 text-sm mt-4">
-            No card needed. We will contact you before any data connection.
+            No card needed · Plans from €29/mo after early access · We contact you before any data connection
           </p>
         )}
       </div>

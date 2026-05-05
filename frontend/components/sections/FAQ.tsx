@@ -17,19 +17,9 @@ const faqs = [
       "Early access starts Shopify-first, with GA4 and ads reporting added through the available account access path. Google Ads support depends on API approval and account eligibility.",
   },
   {
-    question: "How does attribution work across three platforms?",
+    question: "What happens after I join early access?",
     answer:
-      "The goal is to show Shopify, GA4, and ad-platform numbers side by side and explain why they differ. Early versions may use Shopify and GA4 first, with ad-platform data added once the connection path is available.",
-  },
-  {
-    question: "Is my data safe?",
-    answer:
-      "Lapsa will request the minimum useful access and will document how data is stored before early users connect accounts. See the privacy and security pages for the current policy.",
-  },
-  {
-    question: "What happens after the 14-day trial?",
-    answer:
-      "There is no paid trial yet. Joining early access only means we can contact you about onboarding and product updates.",
+      "We will contact you about onboarding and product updates. There is no paid plan or automatic charge. Plans will start from €29/mo after the early access period.",
   },
 ];
 
